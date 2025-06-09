@@ -1,0 +1,32 @@
+#Git - Загрузка проекта на GitHub - git push
+при создании репозиторий на GitHub
+сам github дает подсказку по добавлению файлов
+_____________________________________
+#create a new repository on the command line
+```
+echo "# git_learn" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mka-devit/git_learn.git
+git push -u origin main
+```
+or push an existing repository from the command line
+```
+_____________________________________
+git remote add origin git@github.com:mka-devit/git_learn.git
+git branch -M main
+git push -u origin main
+```
+_____________________________________
+#git clone
+чтобы скопировать файлы из репозитории
+```
+git clone https://github.com/mka-devit/bash_scriptlearn.git
+```
+_____________________________________
+```
+git rm --cached -r -f 5.Git_WorkWithLocalRepository/myproject
+```
+Это **насильно удалит папку из индекса** (то есть Git перестанет её отслеживать), **но НЕ удалит файлы с диска**.
